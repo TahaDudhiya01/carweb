@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Website</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- = -->
+    <!-- navbar section -->
+    <!-- = -->
+
+    <nav class="navbar">
+        <img id="logo" src="AutoCar Logo.png" alt="Company Logo">
+
+        <div class="nav-items" id="nav">
+            <div class="nav-item">
+                <img src="vector.png" alt="Watch">
+                <span>9:00 AM - 8:00 PM</span>
+            </div>
+            <div class="nav-item">
+                <img src="Vector (1).png" alt="Phone">
+                <span>+123 456 789</span>
+            </div>
+        </div>
+
+        <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#carShow">Home</a></li>
+            <li><a href="#ourCar">Our Cars</a></li>
+            <li><a href="#aboutUs">About Us</a></li>
+            <li><a href="#ourSales">Our Sales</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="carGallery" id="carShow">
+        <div class="carSlider">
+            <img class="display" src="HOME PAGE (2).jpg" alt="Car 1">
+            <img class="display" src="HOME PAGE (1).jpg" alt="Car 2">
+            <img class="display" src="HOME PAGE.jpg" alt="Car 3">
+        </div>
+
+        <button>
+            <svg id="prev" class="sliderBtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                <path
+                    d="M9.4 278.6c-12.5-12.5-12.5-32.8 0-45.3l128-128c9.2-9.2 22.9-11.9 34.9-6.9s19.8 16.6 19.8 29.6v256c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9l-128-128z" />
+            </svg>
+        </button>
+
+        <button>
+            <svg id="next" class="sliderBtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                <path
+                    d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6v256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+            </svg>
+        </button>
+    </section>
+
+    <section class="searchBar">
+        <p id="porce">Brand</p>
+        <p id="class">Class</p>
+        <p id="model">Model</p>
+        <button id="barbtn">Find <img src="Arrow 1.png"></button>
+    </section>
+
+    <section class="carDetails">
+        <h1 id="carDetails1">We Provide Best Solution
+            EV Vehicles </h1>
+        <p id="carDetails2">Car Dealer is the most enticing, creative, modern and multipurpose auto dealer
+            Premium
+            WordPress Theme. Suitable for any car dealer websites, business or corporate websites</p>
+    </section>
+
+    <section class="services">
+        <div class="serviceBox">
+            <img src="Vector (4).png" alt="Service 1">
+            <h2>Online Appointment</h2>
+            <p>Galley simply dummy text lorem Ipsum is of the printin k a of type
+                and
+            </p>
+        </div>
+        <div class="serviceBox">
+            <img src="Vector (5).png" alt="Service 2">
+            <h2>Auto Reant Services </h2>
+            <p>Galley simply dummy text lorem Ipsum is of the printin k a of type
+                and
+            </p>
+        </div>
+        <div class="serviceBox" id="ourCar">
+            <img src="Group.png" alt="Service 3">
+            <h2>Brake Check & Services</h2>
+            <p>Galley simply dummy text lorem Ipsum is of the printin k a of type
+                and
+            </p>
+        </div>
+    </section>
+
+
+    <!-- = -->
+    <!-- Our Car section -->
+    <!-- = -->
+
+    <section class="ourCar">
+
+        <h1>Our Cars</h1>
+        <h2>
+            <div class="ourcarBorder"></div>Our Featured Vehicles<div class="ourcarBorder"></div>
+        </h2>
+    </section>
+
+    <section class="carFeatured">
+        <div class="serviceText">
+            <img src="Group 3.png" alt="Icon">
+            <h2>I prefer First class Services</h2>
+            <p>Where luxury meets exceptional care, creating unforgettable moments and exceeding your every
+                expectation.</p>
+        </div>
+        <div class="serviceText">
+            <img src="Group 2.png" alt="Icon">
+            <h2>24/7 road assistance</h2>
+            <p>Reliable support when you need it most, keeping you on the move with confidence and peace of
+                mind.
+            </p>
+        </div>
+        <div class="serviceText">
+            <img src="Group 4.png" alt="Icon">
+            <h2>Quality at minimum Expense</h2>
+            <p>Unlocking affordable brilliance with elevating quality while minimizing costs for maximum value.
+            </p>
+        </div>
+        <img class="lembo" src="car_2-removebg-preview.png" alt="Featured Car">
+    </section>
+
+    <section class="ourCarSection">
+        <div class="carChoice">
+            <p>All</p>
+            <p>SUV</p>
+            <p>Sedan</p>
+            <p>Sports</p>
+            <p>Electric</p>
+        </div>
+    </section>
+
+    <section class="carBoxes">
+        <section class="carbox">
+            <h2>2015 shevrolet corvette Stingray z51 </h2>
+            <img src="image 1.png" alt="Luxury Car">
+            <p id="sport">Sports</p>
+            <p id="auto">Auto</p>
+            <p id="passen">2 passengers</p>
+            <p id="oil">Gasoline</p>
+        </section>
+        <section class="carbox">
+            <h2>2019 shevrolet corvette Stingred z51 </h2>
+            <img src="img_02 1.png" alt="Luxury Car">
+            <p>Sports</p>
+            <p>Auto</p>
+            <p>2 passengers</p>
+            <p>Hybrid</p>
+        </section>
+        <section class="carbox">
+            <h2>2015 shevrolet corvette Stingray z51 </h2>
+            <img src="image 1.png" alt="Luxury Car">
+            <p id="sport">Sports</p>
+            <p id="auto">Auto</p>
+            <p id="passen">2 passengers</p>
+            <p id="oil">Gasoline</p>
+        </section>
+        <section class="carbox" id="aboutUs">
+            <h2>2019 shevrolet corvette Stingred z51 </h2>
+            <img src="img_02 1.png" alt="Luxury Car">
+            <p>Sports</p>
+            <p>Auto</p>
+            <p>2 passengers</p>
+            <p>Hybrid</p>
+        </section>
+    </section>
+
+    <!-- = -->
+    <!-- About Us section -->
+    <!-- = -->
+
+    <h5 class="aboutHead">Our About Us</h5>
+
+    <section class="aboutUs">
+
+        <section class="imgCar">
+            <img id="imgCar1" src="image 3.png" alt="carimg">
+            <img id="imgCar2" src="image 4.png" alt="carimg">
+        </section>
+
+        <section class="carIntro" id="ourSales">
+            <h2>Welcome To The Voiture </h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                Aenean
+                massa.
+                Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetu</p>
+            <p>Vel illum dolore eu feugiat nulla facilisis at vero eros et accu qui blandit praesent luptatum
+                zzril
+                deleni</p>
+        </section>
+    </section>
+
+    <!-- = -->
+    <!-- our sales section -->
+    <!-- = -->
+
+    <h5 class="ourSalesHead">Our Sales</h5>
+
+    <section class="ourSales">
+        <section class="ourSalesText">
+            <h1>Lamborghini Hurcan</h1>
+            <h2>$15000</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore
+                et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non id est laborum ultrices tellus, in
+                suscipit
+                massa
+                vehicula eu</p>
+            <h6>Categories :Expensive , Limo Service</h6>
+        </section>
+        <section class="imgSec">
+            <img class="imgSec1" src="image 5.png" alt="car">
+            <div class="salesImg">
+                <img id="salesImg1" src="image 6.png" alt="car">
+                <img id="salesImg2" src="image 7.png" alt="car">
+            </div>
+        </section>
+    </section>
+
+    <!-- = -->
+    <!-- services section -->
+    <!-- = -->
+
+    <section class="carBody" id="services">
+        <section class="ourCarHead">
+            <div class="ourborder" id="ourborder1"></div>
+            <h1>Provide Services</h1>
+            <div class="ourborder" id="ourborder2"></div>
+        </section>
+        <p id="ourCarPara">Rutrum ante tempus mauris facilisi, leo faucibus,egestas diamlorem malesu, vitae
+            mauris.
+        </p>
+    </section>
+
+    <section class="readable">
+        <div class="readpart">
+            <img src="Vector (9).png" alt="New Car">
+            <h1>New Car</h1>
+            <h3>Volutpat sodales, mauris erat rutrum deserunt sed pharetra mollis, nunc leo eu maecenas nascetur
+                duis viverra nam vitae rutrum deserunt.</h3>
+        </div>
+
+        <div class="readpart">
+            <img src="Frame 1.png" alt="Car Dealer">
+            <h1>Car Dealer</h1>
+            <h3>Volutpat sodales, mauris erat rutrum deserunt sed pharetra mollis, nunc leo eu maecenas nascetur
+                duis viverra nam vitae rutrum deserunt.</h3>
+        </div>
+
+        <div class="readpart">
+            <img src="Vector (10).png" alt="Repair Car">
+            <h1>Repair Car</h1>
+            <h3>Volutpat sodales, mauris erat rutrum deserunt sed pharetra mollis, nunc leo eu maecenas nascetur
+                duis viverra nam vitae rutrum deserunt.</h3>
+        </div>
+
+        <div class="readpart">
+            <img src="Vector (11).png" alt="New Car Rent">
+            <h1>New Car Rent</h1>
+            <h3>Volutpat sodales, mauris erat rutrum deserunt sed pharetra mollis, nunc leo eu maecenas nascetur
+                duis viverra nam vitae rutrum deserunt.</h3>
+        </div>
+    </section>
+
+    <section class="specialization">
+        <section>
+            <h1>Our car Specialization</h1>
+        </section>
+        <section class="review">
+            <section class="reviewPart">
+                <img src="Vector (6).png" alt="">
+                <h2>5557+ Customer </h2>
+            </section>
+            <section class="reviewPart">
+                <img src="Vector (7).png" alt="">
+                <h2> 657+ Total car count</h2>
+            </section>
+            <section class="reviewPart">
+                <img src="Vector (8).png" alt="">
+                <h2>1255+ Call centre solution</h2>
+            </section>
+        </section>
+    </section>
+
+
+
+    <!-- = -->
+    <!-- contact section -->
+    <!-- = -->
+
+    <footer>
+        <div class="footerContainer" id="contact">
+            <div class="logo">
+                <img src="AutoCar Logo.png" alt="AutoCar Logo">
+                <p>Car manufacturers have used many catchy car slogans to attract more customers and build a
+                    brand.
+                    They
+                    also
+                    used slogans to distinguish themselves from competitors.</p>
+            </div>
+
+            <div class="links">
+                <h2>Our Links</h2>
+                <ul>
+                    <li><a href="#">How We Work</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </div>
+
+            <div class="footContact">
+                <h2>Our Contacts</h2>
+                <p>08 W 36th St, New York, NY 10001</p>
+                <p>Email: <a href="mailto:dummy@gmail.com">dummy@gmail.com</a></p>
+                <p>Phone: <a href="tel:+123456789">+123 456 789</a></p>
+            </div>
+        </div>
+        <div class="logoLink">
+            <svg class="footlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                    d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+            </svg>
+            <svg class="footlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                    d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" />
+            </svg>
+            <svg class="footlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+            </svg>
+            <svg class="footlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
+                <path
+                    d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
+            </svg>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
