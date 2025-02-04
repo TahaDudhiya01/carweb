@@ -88,7 +88,7 @@ gsap.from(".ourCar", {
 
 gsap.from(".lembo", {
     opacity: 0,
-    x: 100,
+    y: 100,
     duration: 1.2,
     scrollTrigger: {
         trigger: ".lembo",
